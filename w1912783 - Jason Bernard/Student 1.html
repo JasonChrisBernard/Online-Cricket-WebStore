@@ -1,0 +1,271 @@
+
+<html lang="en">
+    <head> 
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online cricket store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            body {
+  			margin: 0;
+  			font-family: Arial, Helvetica, sans-serif;
+			background-image: url(background-img.jpg);
+			/* background-size: 100%; */
+		
+		}
+		#header{
+			/* background-color: #d3c349; */
+			margin: 5px;
+			border-radius: 5px;
+			height: 10vh;
+			width: 99%;
+			float: left;
+		}
+		#logo{
+			/* background-color: white; */
+			float: left;
+			/* width: 20%; */
+			/* height: 40%; */
+			border-radius: 5px;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            font-weight: 400; 
+           
+		
+		}
+
+        .logo{
+            height: 15vh;
+			display: block;
+			margin-left: 5vh;
+			margin-right: 5vh;
+
+        }
+
+		#name{
+			/* background-color: #04AA6D; */
+			float:left;
+			height: 60px;
+			/* width: 36.7%; */
+			text-align: center;
+			border-radius: 5px;
+			
+		}
+
+		#nav {
+			
+  			overflow: hidden;
+  			background-color:rgb(39, 39, 51);
+			float:right;
+			border-radius: 5px;
+		
+		}
+
+		#nav a {
+  			float: left;
+  			color: #f2f2f2;
+  			padding: 20px 20px;
+  			text-decoration: none; 
+  			font-size: 17px;
+		}
+
+		#nav a:hover {
+  			background-color: #ddd;
+  			color: black;
+		}
+
+		#nav a.active {
+  			background-color: #04AA6D;
+  			color: white;
+		} 
+
+		#content{
+			text-align: center;
+		}
+        </style>
+        
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <Div id="header">
+
+                    <div id="logo"> 
+                        <img src="vidushan.png" alt="ai e" class="logo">     
+                    </div>
+            
+                    <div id="name" style="color:white ;">
+                        <h2>CRICKET.NET</h2>
+                        
+                    </div>
+            
+                    <div id="nav">
+                        <a href= "cw.html" >Home</a>
+                        <a href="tut4.html">jason</a>
+                        <a href="tut3.html">Amanda</a>
+                        <a href="check.html">Niwarthana</a>
+                        <a href="">About Us</a>
+                    </div>
+            
+                </Div>
+            
+                <div id="content" background-image="background_img.jpg" alt="ane" >
+                    <div id="para" style="color: white;">
+                        <!-- <h1>Welcome To CRICKET.NET</h1> -->
+                        
+                    </div>
+            
+                </div>
+                <!--cart icon-->
+                <i class="fa fa-shopping-cart" id="cart_icon" style="font-size:48px;color:rgb(255, 255, 255);"></i>
+                <!--cart-->
+                <div class="cart">
+                    <h2 class="cart-title">Your Items </h2>
+                    <!--Content-->
+                    <div class="cart_content">
+                        
+                    </div>
+                    <!--Total-->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <!--Buy button-->
+                        <a>
+                        <button type="button" class="btn-buy" onclick="invoice()" >Buy Now</button>
+                        </a> 
+                        <!--Cart Close-->
+                        <i class="fa fa-close" id="close-cart" style="font-size:15px;"></i>
+                        <!--Login Details-->
+                        <div class="form">
+                        <form>
+                            <div class="user_n">
+                            <label for="usrname">Full name</label>
+                            <input type="text" id="fullname" name="usrname">
+                            </div>
+
+                            <div class="pass_wd">
+                            <label for="psw">Username</label>
+                            <input type="email" id="usrname" name="psw">
+                            </div>
+
+                            <div class="p_h">
+                            <label for="psw">Phone Number</label>
+                            <input type="number" id="ph" name="ph">
+                            </div>
+                        </form>
+                        </div>
+                        <br>
+                        <div id="line">
+                            <div id="invoice_full"></div>
+                            <div id="invoice_user"></div>
+                            <div id="invoice_phone"></div>
+                            <br>
+                                
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        
+        
+        <div class="b_box">
+        <div class="trans-back">
+            <section class="shop_container">
+                <div class="section-title">Available Products</div>
+            </section>
+            <div id="back_g_blue">
+            <div class="Shop-products">
+                <div class="card">
+                    <img src="cricket_ball.jpg" alt="ball" class="product_img" style="width:100%; height: 300px ">
+                    <h3 class="product-title">Kokkabura Regulation White Cricket ball</h3>
+                    <span class="price">$35.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+            
+
+                <div class="card">
+                    <img src="cricket_bat.jpg" alt="bat" class="product_img" id="bat" style="width: 100%; height: 60%;">
+                    <h3 class="product-title"> Kookaburra Shadow Pro 2000 Cricket bat</h3>
+                    <span class="price">$100.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="cricket_wicket.jpg" alt="wicket" class="product_img" id="wick" style="width: 100%; height: 60%;">
+                    <h3 class="product-title">Thrifty Sports® Cricket Stumps Set </h3>
+                    <span class="price">$15.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+                
+
+                <div class="card">
+                    <img src="cricket_tshirt.png" alt="cricket_wicket" class="product_img">
+                    <h3 class="product-title">Sri Lanka <br>Cricket Jersey </h3>
+                    <span class="price">$10.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="cricket_trousers.jpg" alt="cricket_wicket" class="product_img" >
+                    <h3 class="product-title">Cricket Tracksuit Bottom- Sports Pant</h3>
+                    <span class="price">$5.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="cricket_wig.jpg" alt="cricket_wicket" class="product_img" >
+                    <h3 class="product-title"> Multi Coloured Colorful Afro Wig For cricket fans </h3>
+                    <span class="price">$3.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+                
+
+                <div class="card">
+                    <img src="cricket_shoes.jpg" alt="cricket_wicket" class="product_img">
+                    <h3 class="product-title">Velocity 3.0 <br> Spike Adult Shoes </h3>
+                    <span class="price">$40.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="cricket_helmet.jpg" alt="cricket_wicket" class="product_img">
+                    <h3 class="product-title">SG Blazetech Coloured Cricket Helmet (Yellow) </h3>
+                    <span class="price">$26.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+
+                <div class="card">
+                    <img src="cricket_g_l.jpg" alt="cricket_wicket" class="product_img">
+                    <h3 class="product-title">Cricket Batting Legguard Pads and Gloves Set</h3>
+                    <span class="price">$32.99</span>
+                    <p><button class="add-cart" type="button">Add to Cart</button></p>
+                </div>
+                
+
+            </div>
+            </div>
+        </div>
+        </div>
+        <p>Edited by:</p>
+        <p>Jason Bernard</p>
+
+        <!--Link to Js-->
+        <script src="main_program.js" async></script>
+            
+
+    
+    </body>
+</html>
